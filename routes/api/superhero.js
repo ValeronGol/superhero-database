@@ -1,8 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { superhero: ctrl } = require('../../controllers')
-const { ctrlWrapper } = require('../../middlewares/ctrlWrapper')
-const { validation } = require('../../middlewares/validation')
+const { ctrlWrapper, validation } = require('../../middlewares')
 const { joiSchema } = require('../../models')
 
 router.get('/', ctrlWrapper(ctrl.listSuperhero))
