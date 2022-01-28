@@ -13,7 +13,7 @@ router.post('/', validation(joiSchema), ctrlWrapper(ctrl.addSuperhero))
 router.delete('/:id', ctrlWrapper(ctrl.removeSuperhero))
 
 router.put(
-  '/:Id',
+  '/:id',
   validation(joiSchema),
   ctrlWrapper(ctrl.updateSuperherotById),
 )
