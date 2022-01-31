@@ -1,13 +1,24 @@
 {
-  "name": "template",
-  "version": "0.0.0",
-  "private": true,
+  "name": "superhero-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./bin/server.js",
     "start:dev": "cross-env NODE_ENV=development nodemon ./bin/server.js",
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeronGol/superhero-database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeronGol/superhero-database/issues"
+  },
+  "homepage": "https://github.com/ValeronGol/superhero-database#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "cross-env": "7.0.3",
