@@ -8,11 +8,7 @@ const listSuperhero = async (req, res) => {
     limit: Number(limit),
   })
   res.json({
-    status: 'success',
-    code: 200,
-    data: {
-      result: superhero,
-    },
+    superhero,
   })
 }
 
