@@ -28,12 +28,12 @@ const superheroSchema = Schema(
 const Superhero = model('superhero', superheroSchema)
 
 const joiSchema = Joi.object({
-  nickname: Joi.string().required(),
+  nickname: Joi.string(),
   real_name: Joi.string(),
   origin_description: Joi.string(),
   superpowers: Joi.string(),
   catch_phrase: Joi.string(),
-  images: Joi.string().required(),
+  images: Joi.string(),
 })
 
 module.exports = {
