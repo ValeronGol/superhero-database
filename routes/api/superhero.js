@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { superhero: ctrl } = require('../../controllers')
 const { ctrlWrapper, validation } = require('../../middlewares')
-const { joiSchema } = require('../../models')
+const { joiSchema, joiUpdate } = require('../../models')
 
 router.get('/', ctrlWrapper(ctrl.listSuperhero))
 
@@ -14,7 +14,7 @@ router.delete('/:id', ctrlWrapper(ctrl.removeSuperhero))
 
 router.put(
   '/:id',
-  validation(joiSchema),
+  validation(joiUpdate),
   ctrlWrapper(ctrl.updateSuperherotById),
 )
 
